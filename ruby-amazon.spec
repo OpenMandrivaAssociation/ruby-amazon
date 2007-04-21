@@ -8,16 +8,13 @@ Name: %name
 Version: %version
 Release: %release
 License: GPL
-Group: Development/Other
+Group: Development/Ruby
 URL: http://www.caliban.org/ruby/
 Source0: http://www.caliban.org/files/ruby/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
 BuildRequires: ruby >= %{rubyver}
 Requires: ruby >= %{rubyver}
-
-%{expand:%%define ruby_libdir %(ruby -rrbconfig -e "puts Config::CONFIG['sitelibdir']")}
-%{expand:%%define ruby_archdir %(ruby -rrbconfig -e "puts Config::CONFIG['sitearchdir']")}
 
 %description
 Ruby/Amazon is a Ruby interface to Amazon Web Services.
@@ -39,7 +36,7 @@ ruby setup.rb install
 
 %files
 %defattr(-,root,root)
-%{ruby_libdir}/amazon*
+%{ruby_sitelibdir}/amazon*
 %doc COPYING INSTALL NEWS README README.rdoc TODO example doc
 
 
