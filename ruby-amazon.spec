@@ -1,6 +1,6 @@
 %define name ruby-amazon
 %define version 0.9.2
-%define release %mkrel 6
+%define release 7
 %define rubyver 1.8
 
 Summary: Ruby/Amazon module for access to Amazon Web Services
