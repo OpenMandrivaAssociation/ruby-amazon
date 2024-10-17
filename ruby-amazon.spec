@@ -9,7 +9,7 @@ Version: %version
 Release: %release
 License: GPL
 Group: Development/Ruby
-URL: http://www.caliban.org/ruby/
+URL: https://www.caliban.org/ruby/
 Source0: http://www.caliban.org/files/ruby/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
